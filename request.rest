@@ -1,0 +1,25 @@
+GET http://localhost:8000/users
+
+###
+
+GET http://localhost:8000/users/8675a591-c111-4e81-9209-eb03ab6ec44c
+###
+
+POST http://localhost:8000/users/new-user
+Content-Type: application/json
+
+{
+    "username": "taless",
+    "password":"test1234"
+}
+
+###
+
+POST http://localhost:8000/users/login
+Content-Type: application/json
+
+{
+    "username": "taless",
+    "password":"test1234"
+}
+
